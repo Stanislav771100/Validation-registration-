@@ -1,0 +1,138 @@
+.registration_main{
+    background-color: rgb(109, 178, 224);
+    height: 1000px;
+}
+
+.registration_form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+button {
+    text-decoration:none; text-align:center; 
+    padding:13px 32px; 
+    border: solid black 1px; 
+    border-radius: 6px; 
+    font:16px Verdana, Geneva, sans-serif; 
+    font-weight:bold; 
+    color:#000000; 
+    background:#ffffff; 
+         
+    &:hover{
+        color:white; 
+        background:black; 
+        } 
+    &:active{
+        color:#000000; 
+        background:#ffffff; 
+        }
+}
+input {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 180px;
+    height: 42px;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0 20px;
+    overflow: hidden;
+    border: none;
+    border-radius: 21px;
+    font: normal 20px/normal "Antic", Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: normal;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    background: rgba(40,40,40,0.4);
+    box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.5) inset;
+    transition: all 502ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+  
+  
+        &:hover {
+            width: 200px;
+            color: rgb(255, 255, 255);
+            background: rgba(0,0,0,0.4);
+            -webkit-transition: all 500ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+            -moz-transition: all 500ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+            -o-transition: all 500ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+            transition: all 500ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+        }
+        
+        &:focus {
+            width: 330px;
+            cursor: default;
+            padding: -13px 20px 0;
+            color: rgba(255,255,255,1);
+            transition: all 601ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+        }
+        &::placeholder {
+            color: #ffffff
+
+        }
+}
+  textarea {
+    width: 300px;
+    height: 100px;
+    display: inline-block;
+    box-sizing: border-box;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0 20px;
+    overflow: hidden;
+    border: none;
+    border-radius: 21px;
+    font: normal 20px/normal "Antic", Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: normal;
+    text-overflow: ellipsis;
+    background: rgba(40,40,40,0.4);
+    box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.5) inset;
+    transition: all 502ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+  
+        &:hover{
+            width: 300px;
+            height: 200px;
+            color: rgba(181,181,181,1);
+            background: rgba(0,0,0,0.4);
+            transition: all 500ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+        }
+        &:focus {
+            color: rgb(255, 255, 255);
+            height: 400px;
+            width: 400px;
+        }
+        &::placeholder {
+            color: #ffffff
+        
+        }
+}
+
+.name_login {
+    padding-top: 40px;
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+.email_password_tel {
+    padding-top: 40px;
+    margin-top: 40px;
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+.description {
+    margin-top: 40px;
+}
+.error{
+    border: solid yellow 2px;
+    box-shadow: none;
+    color: yellow;
+}
